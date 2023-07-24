@@ -573,7 +573,7 @@ section{
 
 }
 
-@media (max-width:768px){
+@media (max-width:360px){
 
     .header-div h1{
         font-size: .9375rem;
@@ -592,5 +592,3 @@ section{
         height: 100wh;
     }
 }
-
-   
