@@ -304,21 +304,19 @@ section{
 }
 
 /* Estilos Contacto */
-.formularios-contacto{
+/* .formularios-contacto{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3.125rem;
-}
+} */
 
 /*  Estilos Blog */
 .container-blog{
     display: flex;
 }
 
-.mapshd{
-    width: 100%;
-}
+
 
 /*  Estilos Repuestos */
 .container-products{
@@ -364,7 +362,7 @@ section{
     height: 45px;
     line-height: 45px;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 5px;
     background-color: #0000D7;
     text-align: center;
     transition: all 300ms ease;

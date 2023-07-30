@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cita con un Tecnico</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     
 </head>
@@ -34,110 +35,111 @@
         <section class="formularios-contacto">
             
         <!--Formulario-->
-            <div class="form-personal-data">
-                <h2>Tu mac en manos de profesionales ¡Contactanos!</h2>
-                <form action="" method="GET" enctype="application/x-www-form-urlencoded">
-                    <fieldset>                       <!--Agrupa el formulario-->
-                        <legend>Contactanos</legend>  <!--Le da nombre-->
-                        <DIV>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre">
-                            <label for="Apellido">Apellido</label>
-                            <input type="text" name="Apellido">
-                        </DIV>
-                        <DIV>
-                            <label for="Telefono">Telefono de Contacto</label>
-                            <input type="number" name="Telefono">
-                            <label for="e-mail">e-mail</label>
-                            <input type="text" name="e-mail">
-                        </DIV>
-                        <div>
-                            <label for="telefono">Telefono</label>
-                            <input type="number" name="telefono">
-                        </div>
-                        <div>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <label for="password">Clave de envío</label>
-                            <input type="password">
-                        </div>
-                        <div>
-                            <button type="submit">Enviar</button>            <!--Boton de enviar-->
-                            
-                        </div>
-        
-                    </fieldset>
-                </form >
-            </div>
-        
-        <div clas="cita-concreta">
-            <h2>Concreta una cita y ahorra tiempo!!</h2>
-            <form action="" method="GET" enctype="application/x-www-form-urlencoded">
-                <fieldset>                       <!--Agrupa el formulario-->
-                    <legend>Concretemos una CITA!</legend>  <!--Le da nombre-->
-                    <DIV>
-                        <label for="Tipo de Servicio">Tipo de Servicio</label>
-                        <input type="text" name="Tipo de Servicio">
-                        <label for="Equipo">Equipo</label>
-                        <input type="text" name="Equipo">
-                    </DIV>
-                    
-                    <div>
-                        <label for="Fecha & Hora">Fecha & Hora</label>
-                        <input type="number" name="Fecha & Hora">
+        <h2>Tu mac en manos de profesionales ¡Contactanos!</h2>
+        <legend>Concretemos una CITA!</legend>
+        <div class="container">
+            <form class="row g-3 mt3">
+                <div class="col-6">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+                </div>
+                <div class="col-6">
+                    <label for="telf" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telf" placeholder="Telefono de Contacto">
+                </div>
+                <div class="col-6">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="escribe tu email">
+                </div>
+                <div class="col-6">
+                    <label for="inputAddres" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddres" placeholder="Coloca tu direccion">
+                </div>
+                <div class="col-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ingresa tu ciudad">
+                </div>
+                <div class="col-6">
+                    <label for="Equipo" class="form-label">Equipo</label>
+                    <input type="text" class="form-control" id="Equipo" placeholder="Tipo de equipo">
+                </div>
+                <div class="col-12">
+                    <label for="Falla" class="form-label">Falla</label>
+                    <input type="text" class="form-control" id="Falla" placeholder="Breve descripción de la falla">
+                </div>
+                <h3>Concreta una cita y ahorra tiempo!!</h3>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" id="checkTerems" class="form-check-input">
+                        <label for="checkTerems" class="form-check-label">Deseo Concretar Una Cita</label>
                     </div>
-                    <div>
-                        <textarea name="Breve descripcion de la falla" id="" cols="30" rows="10">Breve descripción de la falla</textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" id="checkTerems" class="form-check-input">
+                        <label for="checkTerems" class="form-check-label">Acepto los terminos </label>
                     </div>
-                    <div>
-                        <label for="password">Clave de envío</label>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>            <!--Boton de enviar-->
-                        
-                    </div>
-                </fieldset>
+                </div>
+                <div class="col-3">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass" placeholder="Clave de envío">
+                </div> 
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                        Enviar
+                    </button>
+                </div>
             </form>
+
         </div>
-        <div>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/pWgVd7jHljs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="container row mt100">
+            <div class="col-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/pWgVd7jHljs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.792850419581!2d-78.49540392538646!3d-0.20472699979325523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a1473fbb645%3A0x35ec25287b8efe41!2sHardware%20Doctor%20-%20Especialistas%20en%20reparaci%C3%B3n%20de%20Laptops!5e0!3m2!1ses!2sec!4v1682913344027!5m2!1ses!2sec" width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        </section>
-        <section class="mapshd">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.792850419581!2d-78.49540392538646!3d-0.20472699979325523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a1473fbb645%3A0x35ec25287b8efe41!2sHardware%20Doctor%20-%20Especialistas%20en%20reparaci%C3%B3n%20de%20Laptops!5e0!3m2!1ses!2sec!4v1682913344027!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
     </main>
+
     <!--::::Pie de Pagina::::::-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="./index.html">
-                        <img src="../assets/img/LOGO HD pequeño AZUL.png" alt="Logo HD">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-            </div>
-            <div class="box">
-                <h2>SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/HDlaptops" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/hdlaptops/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+    
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="./index.html">
+                            <img src="../assets/img/LOGO HD pequeño AZUL.png" alt="Logo HD">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/HDlaptops" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/hdlaptops/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grupo-2">
-            <small>&copy; 2023 <b>Hardware Doctor</b> - Todos los Derechos Reservados.</small>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>Hardware Doctor</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 </html>
