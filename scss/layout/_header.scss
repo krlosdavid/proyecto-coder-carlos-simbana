@@ -1,0 +1,57 @@
+$color_1: white;
+$color_2: #fff;
+$background-color_1: white;
+
+nav {
+	background: black;
+	height: 100px;
+	width: 100%;
+	padding-top: 1.875rem;
+	ul {
+		float: right;
+		margin-right: 20px;
+		li {
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+			a {
+				color: $color_1;
+				font-size: 18px;
+				padding: 7px 13px;
+				border-radius: 3px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.enlace {
+	position: absolute;
+	padding: .0625rem 6.25rem 3.125rem 30px;
+}
+.logo {
+	height: 5rem;
+}
+li {
+	a.active {
+		background: #0000D7;
+		transition: .5s;
+	}
+	a {
+		&:hover {
+			background: #0000D7;
+			transition: .5s;
+		}
+	}
+}
+.checkbtn {
+	font-size: 30px;
+	color: $color_2;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}

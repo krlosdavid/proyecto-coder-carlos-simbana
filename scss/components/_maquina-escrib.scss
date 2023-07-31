@@ -1,0 +1,26 @@
+$font-family_1: 'Open Sans', sans-serif;
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+.maquina {
+	display: block;
+	font-family: $font-family_1;
+	font-size: 1.875rem;
+	color: $color_3;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 70ch;
+	animation: typing 5s steps(70), blink .5s infinite step-end alternate;
+	overflow: hidden;
+	padding-left: 12.5rem;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}

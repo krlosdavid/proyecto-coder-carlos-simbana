@@ -1,0 +1,18 @@
+
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: .9375rem 3.125rem;
+}
+.cita-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.5625rem;
+	font-size: 1.25rem;
+	background-color: $background-color_2;
+	color: $color_1;
+	padding: .9375rem .625rem;
+}

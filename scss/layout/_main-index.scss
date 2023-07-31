@@ -1,0 +1,35 @@
+$font-family_1: 'Roboto', sans-serif;
+section {
+	background-color: $background-color_1;
+	background-size: cover;
+	background-position: center center;
+	height: calc(100vh - 80px);
+}
+.banner {
+	background-color: $background-color_1;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+// Somos los mejors
+
+
+
+
+.porque-somos-mejores {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $background-color_2;
+	height: 34.375rem;
+	width: 100%;
+	div {
+		p {
+			color: $color_1;
+			font-family: $font-family_1;
+			font-size: .9375rem;
+		}
+	}
+}
+

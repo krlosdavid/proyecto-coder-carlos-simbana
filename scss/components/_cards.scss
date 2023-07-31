@@ -1,0 +1,28 @@
+
+.container-cards {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 31.25rem;
+}
+.cards {
+	width: 15.625rem;
+	padding: .25rem;
+}
+.clase-servicios {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 100;
+		object-fit: cover;
+	}
+}
+.cards-texto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
